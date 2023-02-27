@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('5.jpg');
+            background-position: center;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 40px;
+            background-attachment: fixed;
+        }
+        .container{
+            background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            width: 600px;
+            max-width: 100%;
+            margin-left:35%;
+            overflow: hidden;
+            padding-left: 100px;
+        }
+        .header{
+             color: #e7a33c;
+            border-bottom: 1px solid #f0f0f0;
+            padding: 20px 20px;
+            text-align: center;
+        }
+        .h2{
+            margin: 0;
+             
+        }
+          .form{
+ 
+            padding: 30px 40px;
+        }
+        .form-control{
+            display: grid;
+            grid-template-columns: 100px 3fr 1fr;
+            column-gap: 20px;
+           margin-bottom: 30px;
+           position: relative;
+           padding-top: 20px;
+        }
+        .form-control label{
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 14px;
+           text-transform: uppercase;
+           color: #fff;
+           vertical-align: bottom;
+        }
+        .form-control input{
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            color: rgb(35, 135, 236);
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .form-control.success input{
+            border-color: #2ecc71;
+        }
+        .form-control.error input{
+            border-color: #e74c3c;
+        }
+        .form-control small{
+            visibility: hidden;
+            position: absolute;
+            bottom: 0;
+            left: 100px;
+            top: 57px;
+            
+        }
+        .form-control.error small{
+            visibility: visible;
+            color: #e74c3c;
+        }
+        .form button{
+            background-color: #3a7eec;
+            background-attachment: fixed;
+            border: 2px solid #3a7eec;
+            color: #fff;
+            display: block;
+            font-family: inherit;
+            font-size: 16px;
+            padding: 10px;
+            width: 100%;
+        }
+        .gen{
+            padding-bottom: 20px;
+            color: #fff;
+        }
+  
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+	<div class="header">
+		<h2>Create Account</h2>
+	</div>
+	<form id="form" class="form">
+
+        <div class="form-control">
+			<label for="username">First Name</label>
+			<input type="text" placeholder="Enter firstname" id="firstname" />
+			<small>Error message</small>
+		</div>
+        <div class="form-control">
+			<label for="username">Last Name</label>
+			<input type="text" placeholder="Enter lastname" id="lastname" />
+			<small>Error message</small>
+		</div>
+        <div class="form-control">
+			<label for="username">Username</label>
+			<input type="text" placeholder="Create username" id="username" />
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Email</label>
+			<input type="email" placeholder="Enter email" id="email" />
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Password</label>
+			<input type="password" placeholder="Enter Password" id="password"/>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Password</label>
+			<input type="password" placeholder="Confirm Password" id="password2"/>
+			<small>Error message</small>
+		</div>
+   
+        <div class="form-control">
+			<label for="username">ID</label>
+			<input type="password" placeholder="Enter new ID" id="idno"/>
+			<small>Error message</small>
+		</div>
+  
+        <div class="gen">
+         <label for="username">Gender</label> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        <label for="male"  style="color: rgb(79, 74, 74) ;">Male</label><input type="radio" id="gender" name="gender" value="male">
+        <label for="female" style="color: rgb(79, 74, 74)">Female</label><input type="radio" id="gender" name="gender" value="female">
+        </div>
+        <div class="form-control">
+			<label for="username">Date of Birth</label>
+			<input type="date" placeholder="" id="date"/>
+			<small>Error message</small>
+		</div>
+
+        <div class="form-control">
+			<label for="username">Phone</label>
+			<input type="number" placeholder="Enter Phone-number" id="phone" value="">
+			<small>Error message</small>
+		</div>
+        <div class="form-control">
+			<label for="username">Nationality</label>
+			<input type="text" placeholder="Enter Country " id="nation" value="">
+			<small>Error message</small>
+		</div>
+        <div class="form-control">
+			<label for="username">City</label>
+			<input type="text" placeholder="Enter City" id="city" value="">
+			<small>Error message</small>
+		</div>
+        <div class="form-control">
+			<label for="username">Pin Code</label>
+			<input type="text" placeholder="Enter Pin Code" id="pincode" value="">
+			<small>Error message</small>
+		</div>
+        <div class="form-control">
+			<label for="username">state</label>
+			<input type="text" placeholder="Enter State" id="state" value="">
+			<small>Error message</small>
+		</div>
+        <div class="form-control">
+			<label for="username">position</label>
+			<input type="text" placeholder="Enter Position " id="position" value="">
+			<small>Error message</small>
+		</div>
+        <div class="form-control">
+			<label for="username">Department</label>
+			<input type="text" placeholder="Enter Department" id="department"/>
+			<small>Error message</small>
+		</div>
+
+
+		<button>Register</button>
+	</form>
+</div>
+
+<script src="validation.js"></script>
+</body>
+</html>
